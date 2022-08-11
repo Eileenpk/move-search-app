@@ -21,12 +21,12 @@ Users should be able to:
 
 ### Screenshot
 
-![screen shot of full screen webpage](https://github.com/Eileenpk/movie-search-app/blob/main/images/Screenshot.png)
+![screen shot of full screen webpage](https://github.com/Eileenpk/move-search-app/blob/main/images/Screenshot.png)
 
 ### Links
 
 - Solution URL: [GitHub](https://github.com/Eileenpk/movie-search-app)
-- Live Site URL: [live site]( https://eileenpk.github.io/movie-search-app/)
+- Live Site URL: [live site]( https://eileenpk.github.io/move-search-app/)
 
 ### Built with
 
