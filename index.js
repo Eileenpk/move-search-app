@@ -8,7 +8,7 @@ let display = ''
 
 
 const search = (e) => {
-//     e.preventDefault()   
+    e.preventDefault()   
     const input = document.querySelector('input').value
     display = ""
     fetchFunc(input)
@@ -22,7 +22,7 @@ const addToWatchlist = (movie) => {
 }
 
 const fetchFunc = (input) => {
-    fetch (`http://www.omdbapi.com/?s=${input}${apiKey}`)
+    fetch (`https://www.omdbapi.com/?s=${input}${apiKey}`)
     .then(res => res.json())
     .then(data => {
         if(!data.Search) {
@@ -33,7 +33,7 @@ const fetchFunc = (input) => {
         } else {
         data.Search.forEach((movie)=>{
             
-            fetch(`http://www.omdbapi.com/?i=${movie.imdbID}${apiKey}`)
+            fetch(`https://www.omdbapi.com/?i=${movie.imdbID}${apiKey}`)
                 .then(res => res.json())
                 .then(data => {
                      display +=`
@@ -67,7 +67,7 @@ const fetchFunc = (input) => {
 
 const alert = (movie) => {
     const popup = document.querySelector('.popup')
-    fetch(`http://www.omdbapi.com/?i=${movie}${apiKey}`)
+    fetch(`https://www.omdbapi.com/?i=${movie}${apiKey}`)
     .then(res => res.json())
     .then(data => {
         popup.innerHTML = `
