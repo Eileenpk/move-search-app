@@ -8,7 +8,7 @@ let display = ''
 
 
 const search = (e) => {
-    e.preventDefault()   
+//     e.preventDefault()   
     const input = document.querySelector('input').value
     display = ""
     fetchFunc(input)
