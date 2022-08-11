@@ -7,7 +7,7 @@ let watchlist = JSON.parse(localStorage.getItem('watchlistArr'))
 const viewWatchlist = (movie) => {
     
     watchlist.forEach(movie => {
-        fetch(`http://www.omdbapi.com/?i=${movie}${apiKey}`)
+        fetch(`https://www.omdbapi.com/?i=${movie}${apiKey}`)
             .then(res => res.json())
             .then(data => {
                 
@@ -41,7 +41,7 @@ const viewWatchlist = (movie) => {
 
 const alert = (movie) => {
     const popup = document.querySelector('.popup')
-    fetch(`http://www.omdbapi.com/?i=${movie}${apiKey}`)
+    fetch(`https://www.omdbapi.com/?i=${movie}${apiKey}`)
     .then(res => res.json())
     .then(data => {
         popup.innerHTML = `
