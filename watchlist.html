@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="watchlist.js" defer></script>
+    <script src="https://kit.fontawesome.com/a8c22f49c5.js" crossorigin="anonymous"></script> 
+    <title>Watchlist</title>
+</head>
+<body>
+    <div class="overlay">
+    <header>
+        <h1>My Watchlist</h1>
+        <a href="index.html" id="index">Search for movies</a>
+    </header>
+</div>
+<main>
+    <section id="watchlist-container">
+        <div class="icon-container">
+            <h2 class="watchlist-filler-text">Your watchlist is looking a little empty...</h2>
+        </div>
+        <a aria-label="add movies to your watchlist" href="index.html" class="add-more"><div><i class="fa-solid fa-circle-plus"></i></div>Let's add some movies!</a>
+    </section>
+
+    <section class="popup show-popup">
+        <h2>removed from your watchlist!</h2>
+    </section>
+
+</body>
+</html>
